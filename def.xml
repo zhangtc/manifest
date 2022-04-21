@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <!-- remote: name 名称，fetch 远程地址。可以有多个remote，通过project.remote可指定不同的remote -->
-  <remote name="origin"
-          fetch="git@github.com:HiltonWei"
-          review="" />
-  <!-- default: revision 指定分支，remote 指定remote name，sync-j 同步线程数 -->
-  <default revision="master"
-           remote="origin"
-           sync-j="4" />
-  <!-- project：path 本地相对路径，name 远程相对路径，完整路径为 remote.fetch + project.name -->
-  <project path="tools" name="tools" />
-  <project path="atree" name="atree" />
-</manifest>
+1 <?xml version="1.0" encoding="UTF-8"?>
+  2 <manifest>
+  3   <!-- remote: name 名称，fetch 远程地址。可以有多个remote，通过project.remote可指定不同的remote -->
+  4   <remote name="origin"
+  5           fetch="https://github.com"
+  6           review="" />
+  7   <!-- default: revision 指定分支，remote 指定remote name，sync-j 同步线程数 -->
+  8   <default revision="master"
+  9            remote="origin"
+ 10            sync-j="4" />
+ 11   <!-- project：path 本地相对路径，name 远程相对路径，完整路径为 remote.fetch + project.name -->
+ 12   <project path="note1" name="zhangtc/note" remote="origin"/>
+ 13   <project path="dev1" name="zhangtc/dev" remote="origin"/>
+ 14 </manifest>
